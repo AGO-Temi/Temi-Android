@@ -1,4 +1,4 @@
-package org.gsm.ago
+package com.withkwon.projecttemi
 
 import org.junit.Test
 
