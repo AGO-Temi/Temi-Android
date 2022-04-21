@@ -18,4 +18,12 @@ class MainViewModel @Inject constructor(
         )
         robot.speak(ttsRequest)
     }
+    fun askQuestion(question: String) {
+        robot.askQuestion(question)
+        robot.addAsrListener(object : Robot.AsrListener {
+            override fun onAsrResult(asrResult: String) {
+
+            }
+        })
+    }
 }

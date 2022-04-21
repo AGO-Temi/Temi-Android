@@ -38,6 +38,9 @@ class MainActivity : AppCompatActivity(), OnRobotReadyListener {
                 }
             }
         }
+        fab.setOnClickListener {
+            mainViewModel.askQuestion("무엇을 도와드릴까요?")
+        }
     }
 
     override fun onRobotReady(isReady: Boolean) {
