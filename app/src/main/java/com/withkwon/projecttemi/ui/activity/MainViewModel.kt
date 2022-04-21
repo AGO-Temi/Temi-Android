@@ -1,4 +1,4 @@
-package com.withkwon.projecttemi.ui
+package com.withkwon.projecttemi.ui.activity
 
 import androidx.lifecycle.ViewModel
 import com.robotemi.sdk.Robot

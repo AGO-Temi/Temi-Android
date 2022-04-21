@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.withkwon.projecttemi.ui.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/placeListFragment"
+        android:name="com.withkwon.projecttemi.ui.fragment.PlaceListFragment"
+        android:label="place_list_fragment"
+        tools:layout="@layout/place_list_fragment">
+        <action
+            android:id="@+id/action_placeListFragment_to_movingFragment"
+            app:destination="@id/movingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/movingFragment"
+        android:name="com.withkwon.projecttemi.ui.fragment.MovingFragment"
+        android:label="moving_fragment"
+        tools:layout="@layout/moving_fragment">
+        <action
+            android:id="@+id/action_movingFragment_to_placeDescriptionFragment"
+            app:destination="@id/placeDescriptionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/placeDescriptionFragment"
+        android:name="com.withkwon.projecttemi.ui.fragment.PlaceDescriptionFragment"
+        android:label="place_description_fragment"
+        tools:layout="@layout/place_description_fragment" />
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.withkwon.projecttemi.ui.fragment.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_introduceSchoolFragment2"
+            app:destination="@id/introduceSchoolFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_placeListFragment"
+            app:destination="@id/placeListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_creditFragment"
+            app:destination="@id/creditFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/introduceSchoolFragment"
+        android:name="com.withkwon.projecttemi.ui.fragment.IntroduceSchoolFragment"
+        android:label="IntroduceSchoolFragment" />
+
+    <fragment
+        android:id="@+id/creditFragment"
+        android:name="com.withkwon.projecttemi.ui.fragment.CreditFragment"
+        android:label="fragment_credit"
+        tools:layout="@layout/fragment_credit" />
+
+
+
+</navigation>
