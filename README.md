@@ -10,3 +10,6 @@
 curl -k "https://192.168.0.23.5556/grantAuth?pwd= {개발자 모드에 나오는 인증코드}"<br>
 adb connect 192.168.0.23
 
+# 에뮬레이터 실행이 안될때
+오류는 안나고 applying filter가 계속 뜬다면<br>
+temi sdk를 빼고 실행
