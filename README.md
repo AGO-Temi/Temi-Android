@@ -9,7 +9,7 @@
 13.3인치, 1920*1080
 
 # Emulator 생성
-기본 지급되는 Emul에서는 사이즈 맞는게 없으므로 Clone Device -> 왼쪽하단 New HardWare Profile<br> -> 사이즈 입력후 Finish
+기본 지급되는 Emul에서는 사이즈 맞는게 없으므로 Clone Device -> 왼쪽하단 New HardWare Profile<br> -> 사이즈 입력후 Finish<br>
 Screen size : 13.3<br>
 Resolution : 1920*1080 
 
