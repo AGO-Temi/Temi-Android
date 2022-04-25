@@ -5,6 +5,14 @@
 [test/이름] 테스트 실행 <br>
 [feature/이름] 기능개발 <br>
 
+# Temi Size
+13.3인치, 1920*1080
+
+# Emulator 생성
+기본 지급되는 Emul에서는 사이즈 맞는게 없으므로 Clone Device -> 왼쪽하단 New HardWare Profile<br> -> 사이즈 입력후 Finish
+Screen size : 13.3<br>
+Resolution : 1920*1080 
+
 # Temi build 연결 방법
 
 curl -k "https://192.168.0.23.5556/grantAuth?pwd= {개발자 모드에 나오는 인증코드}"<br>
