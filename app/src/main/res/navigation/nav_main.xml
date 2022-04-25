@@ -3,18 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_main"
-    app:startDestination="@id/splashFragment">
-
-    <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.withkwon.projecttemi.ui.fragment.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
-        <action
-            android:id="@+id/action_splashFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
-    </fragment>
-
+    app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/placeListFragment"
