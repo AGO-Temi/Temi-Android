@@ -18,8 +18,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/school_introduce"
-            android:layout_width="831dp"
-            android:layout_height="920dp"
+            android:layout_width="600dp"
+            android:layout_height="700dp"
             android:shadowColor="#6A6868"
             app:cardCornerRadius="15dp"
             app:cardElevation="2dp"
@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:text="School Introduce"
                     android:textColor="@color/black"
-                    android:textSize="70dp"
+                    android:textSize="50dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -62,14 +62,14 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/direction_guidance"
-            android:layout_width="831dp"
-            android:layout_height="920dp"
+            android:layout_width="600dp"
+            android:layout_height="700dp"
             android:onClick="@{()->fragment.goDirectionGuidance()}"
             android:shadowColor="#6A6868"
             app:cardCornerRadius="15dp"
             app:cardElevation="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/credit"
             app:layout_constraintStart_toEndOf="@+id/school_introduce"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -99,13 +99,57 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:text="Direction guidance"
                     android:textColor="@color/black"
-                    android:textSize="70dp"
+                    android:textSize="50dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/direction_background" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/credit"
+            android:layout_width="600dp"
+            android:layout_height="700dp"
+            android:onClick="@{()->fragment.goCredit()}"
+            android:shadowColor="#6A6868"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/direction_guidance"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/people_img"
+                    android:layout_width="450dp"
+                    android:layout_height="450dp"
+                    android:src="@drawable/ic_baseline_people_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit"
+                    android:textColor="@color/black"
+                    android:textSize="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/people_img" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
