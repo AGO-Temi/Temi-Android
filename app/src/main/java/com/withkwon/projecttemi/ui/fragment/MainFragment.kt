@@ -36,4 +36,8 @@ class MainFragment : Fragment() {
         findNavController().navigate(R.id.action_mainFragment_to_placeListFragment)
     }
 
+    fun goCredit(){
+        findNavController().navigate(R.id.action_mainFragment_to_creditFragment)
+    }
+
 }
