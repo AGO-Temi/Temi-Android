@@ -1,14 +1,261 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/temi_backgroubd"
     tools:context=".ui.fragment.CreditFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temi 개발팀"
+        android:textSize="70dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:id="@+id/temi_team_text"
+        />
 
-</FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/android_team"
+        android:layout_width="600dp"
+        android:layout_height="800dp"
+        android:shadowColor="#6A6868"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/ios_team"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temi_team_text">
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Android"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:layout_marginTop="50dp"
+             android:textColor="@color/black"
+             android:textSize="55dp"
+             android:id="@+id/text_android"/>
+
+         <TextView
+             android:id="@+id/deayeong"
+             android:layout_marginTop="20dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintTop_toBottomOf="@+id/text_android"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:text="김대영"
+             android:textSize="30dp"
+             android:textColor="@color/black"/>
+
+         <TextView
+             android:id="@+id/taeyoong"
+             android:layout_marginTop="20dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintTop_toBottomOf="@+id/deayeong"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:text="양태웅"
+             android:textSize="30dp"
+             android:textColor="@color/black"/>
+
+
+         <TextView
+             android:id="@+id/minhyuuk"
+             android:layout_marginTop="20dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintTop_toBottomOf="@+id/taeyoong"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:text="정민혁"
+             android:textSize="30dp"
+             android:textColor="@color/black"/>
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ios_team"
+        android:layout_width="600dp"
+        android:layout_height="800dp"
+        android:shadowColor="#6A6868"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/android_team"
+        app:layout_constraintEnd_toStartOf="@+id/ai_team"
+        app:layout_constraintTop_toBottomOf="@id/temi_team_text">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iOS"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:textSize="55dp"
+                android:id="@+id/text_ios"/>
+
+            <TextView
+                android:id="@+id/jihoon"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_ios"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="안지훈"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/baekteun"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/jihoon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="최형우"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/sunghoon"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/baekteun"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="김성훈"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ai_team"
+        android:layout_width="600dp"
+        android:layout_height="800dp"
+        android:shadowColor="#6A6868"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:layout_constraintStart_toEndOf="@+id/ios_team"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temi_team_text">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:textSize="55dp"
+                android:id="@+id/text_ai"/>
+
+            <TextView
+                android:id="@+id/sanha"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_ai"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="강산하"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/taeyeong"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/sanha"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="김태영"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/mugyeol"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/taeyeong"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="신무결"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/seungbin"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/mugyeol"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="백승빈"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/dohyeon"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/seungbin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="김도현"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
