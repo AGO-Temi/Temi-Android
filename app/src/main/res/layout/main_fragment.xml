@@ -18,8 +18,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/school_introduce"
-            android:layout_width="600dp"
-            android:layout_height="700dp"
+            android:layout_width="420dp"
+            android:layout_height="500dp"
             android:shadowColor="#6A6868"
             app:cardCornerRadius="15dp"
             app:cardElevation="2dp"
@@ -35,8 +35,8 @@
 
                 <ImageView
                     android:id="@+id/gsm_logo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="330dp"
+                    android:layout_height="330dp"
                     android:src="@drawable/gsm_logo"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:text="School Introduce"
                     android:textColor="@color/black"
-                    android:textSize="50dp"
+                    android:textSize="40dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -62,8 +62,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/direction_guidance"
-            android:layout_width="600dp"
-            android:layout_height="700dp"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
             android:onClick="@{()->fragment.goDirectionGuidance()}"
             android:shadowColor="#6A6868"
             app:cardCornerRadius="15dp"
@@ -79,8 +79,8 @@
 
                 <ImageView
                     android:id="@+id/direction_background"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"
+                    android:layout_height="280dp"
                     android:src="@drawable/direction_background"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -88,8 +88,8 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
                     android:src="@drawable/location"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +102,7 @@
                     android:layout_marginTop="30dp"
                     android:text="Direction guidance"
                     android:textColor="@color/black"
-                    android:textSize="50dp"
+                    android:textSize="40dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -114,8 +114,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/credit"
-            android:layout_width="600dp"
-            android:layout_height="700dp"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
             android:onClick="@{()->fragment.goCredit()}"
             android:shadowColor="#6A6868"
             app:cardCornerRadius="15dp"
@@ -131,8 +131,8 @@
 
                 <ImageView
                     android:id="@+id/people_img"
-                    android:layout_width="450dp"
-                    android:layout_height="450dp"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
                     android:src="@drawable/ic_baseline_people_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -145,7 +145,7 @@
                     android:layout_height="wrap_content"
                     android:text="Credit"
                     android:textColor="@color/black"
-                    android:textSize="50dp"
+                    android:textSize="40dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
