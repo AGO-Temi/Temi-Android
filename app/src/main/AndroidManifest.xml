@@ -10,6 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectTemi">
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:exported="false" />
 
         <meta-data
             android:name="com.robotemi.sdk.metadata.SKILL"
