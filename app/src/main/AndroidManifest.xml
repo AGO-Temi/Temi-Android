@@ -25,10 +25,13 @@
             android:name="com.robotemi.sdk.metadata.SKILL"
             android:value="@string/app_name" />
 
+        <meta-data
+            android:name="com.robotemi.sdk.metadata.KIOSK"
+            android:value="TRUE" />
+
         <activity
             android:name=".ui.activity.MainActivity"
-            android:exported="true">
-             </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
