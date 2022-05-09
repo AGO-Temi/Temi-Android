@@ -6,15 +6,15 @@
 
     </data>
 
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.fragment.IntroduceSchoolFragment">
 
-        <TextView
+        <WebView
+            android:id="@+id/webView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="학교소개 페이지" />
+            android:layout_height="match_parent"/>
 
-    </FrameLayout>
+    </RelativeLayout>
 </layout>
