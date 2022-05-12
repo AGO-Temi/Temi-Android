@@ -1,7 +1,6 @@
 # Temi-Android
-
-# 초기 규칙
-
+키오스크 및 안내로봇을 개발합니다.<br>
+AI 동아리 WITH강 & WITH권에서 제작하는 동아리 프로젝트입니다.
 
 ### Temi-Android
 > **Temi SDK**를 개발하는 Repo 입니다.
