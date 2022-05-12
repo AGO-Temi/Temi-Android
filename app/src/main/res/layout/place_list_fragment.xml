@@ -1,20 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable
+            name="fragment"
+            type="com.withkwon.projecttemi.ui.fragment.PlaceListFragment" />
     </data>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/temi_backgroubd"
         tools:context=".ui.fragment.PlaceListFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/place_list_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="장소 리스트"
+                android:textColor="@color/white"
+                android:textSize="70dp" />
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:onClick="@{()->fragment.goBack()}"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="장소 리스트 페이지" />
+
+
 
     </FrameLayout>
 </layout>
