@@ -10,26 +10,9 @@
         android:name="com.withkwon.projecttemi.ui.fragment.PlaceListFragment"
         android:label="place_list_fragment"
         tools:layout="@layout/place_list_fragment">
-        <action
-            android:id="@+id/action_placeListFragment_to_movingFragment"
-            app:destination="@id/movingFragment" />
     </fragment>
 
-    <fragment
-        android:id="@+id/movingFragment"
-        android:name="com.withkwon.projecttemi.ui.fragment.MovingFragment"
-        android:label="moving_fragment"
-        tools:layout="@layout/moving_fragment">
-        <action
-            android:id="@+id/action_movingFragment_to_placeDescriptionFragment"
-            app:destination="@id/placeDescriptionFragment" />
-    </fragment>
 
-    <fragment
-        android:id="@+id/placeDescriptionFragment"
-        android:name="com.withkwon.projecttemi.ui.fragment.PlaceDescriptionFragment"
-        android:label="place_description_fragment"
-        tools:layout="@layout/place_description_fragment" />
 
     <fragment
         android:id="@+id/mainFragment"
@@ -44,7 +27,7 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim"
             app:popUpTo="@id/mainFragment"
-            app:popUpToInclusive="true" />
+            app:popUpToInclusive="false" />
         <action
             android:id="@+id/action_mainFragment_to_placeListFragment"
             app:destination="@id/placeListFragment"
@@ -53,12 +36,12 @@
             app:popEnterAnim="@animator/nav_default_pop_enter_anim"
             app:popExitAnim="@animator/nav_default_pop_exit_anim"
             app:popUpTo="@id/mainFragment"
-            app:popUpToInclusive="true" />
+            app:popUpToInclusive="false" />
         <action
             android:id="@+id/action_mainFragment_to_creditFragment"
             app:destination="@id/creditFragment"
             app:popUpTo="@id/mainFragment"
-            app:popUpToInclusive="true" />
+            app:popUpToInclusive="false" />
     </fragment>
 
     <fragment
