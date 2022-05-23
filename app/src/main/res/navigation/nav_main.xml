@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/placeListFragment"
-        android:name="com.withkwon.projecttemi.ui.fragment.PlaceListFragment"
+        android:name="com.withkwon.projecttemi.ui.fragment.PlaceDescriptionFragment"
         android:label="place_list_fragment"
-        tools:layout="@layout/place_list_fragment">
+        tools:layout="@layout/place_description_fragment">
         <action
             android:id="@+id/action_placeListFragment_to_movingFragment"
             app:destination="@id/movingFragment" />

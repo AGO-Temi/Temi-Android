@@ -2,4 +2,5 @@
     <string name="app_name">ProjectTemi</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="current_location_image_view">current_location_image_view</string>
 </resources>

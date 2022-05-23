@@ -2,6 +2,6 @@ package com.withkwon.projecttemi.ui.fragment
 
 import androidx.lifecycle.ViewModel
 
-class PlaceListViewModel : ViewModel() {
+class PlaceDescriptionViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 }

@@ -8,5 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <!--기본적인 테미 백그라운드-->
-    <color name="temi_backgroubd">#313131</color>
+    <!--temi_backgroubd로 되어있어서 수정함    -->
+    <color name="temi_background">#313131</color>
 </resources>

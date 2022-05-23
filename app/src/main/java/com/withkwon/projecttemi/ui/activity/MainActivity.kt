@@ -15,6 +15,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.robotemi.sdk.listeners.OnRobotReadyListener
 import com.withkwon.projecttemi.R
 import com.withkwon.projecttemi.databinding.ActivityMainBinding
+import com.withkwon.projecttemi.ui.fragment.MainViewModel
 import com.withkwon.projecttemi.util.Constants.TAG
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -31,8 +32,5 @@ class MainActivity : AppCompatActivity(){
         navController.navigateUp()
 
     }
-
-
-
 }
 

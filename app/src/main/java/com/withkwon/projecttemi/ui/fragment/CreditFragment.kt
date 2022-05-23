@@ -9,7 +9,6 @@ import androidx.navigation.fragment.findNavController
 import com.withkwon.projecttemi.R
 import com.withkwon.projecttemi.databinding.FragmentCreditBinding
 
-
 class CreditFragment : Fragment() {
     private val binding by lazy { FragmentCreditBinding.inflate(layoutInflater) }
 
@@ -22,9 +21,7 @@ class CreditFragment : Fragment() {
 
         return binding.root
     }
-
     fun goBack(){
         findNavController().navigateUp()
     }
-
 }
