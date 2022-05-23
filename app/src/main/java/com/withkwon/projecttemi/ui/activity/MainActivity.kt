@@ -23,11 +23,7 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         binding.activity = this
-        navController.navigateUp()
 
     }
-
-
-
 }
 
