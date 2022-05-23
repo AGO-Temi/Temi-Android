@@ -13,14 +13,6 @@ import com.withkwon.projecttemi.util.Constants.TAG
 class IntroduceSchoolFragment : Fragment() {
     private val binding by lazy { IntroduceSchoolFragmentBinding.inflate(layoutInflater) }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        binding.buttonBack.setOnClickListener {
-            Log.d(TAG, "onCreateView: ${findNavController().navigateUp()}")
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -32,6 +24,10 @@ class IntroduceSchoolFragment : Fragment() {
             loadWithOverviewMode = true
             builtInZoomControls = true
             setSupportZoom(true)
+        }
+        
+        binding.buttonBack.setOnClickListener {
+            Log.d(TAG, "onCreateView: ${findNavController().navigateUp()}")
         }
 
         return root

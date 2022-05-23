@@ -6,13 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.withkwon.projecttemi.R
+import com.withkwon.projecttemi.databinding.PlaceListFragmentBinding
 
 class PlaceListFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = PlaceListFragment()
-    }
+   private val binding by lazy { PlaceListFragmentBinding.inflate(layoutInflater) }
 
     private lateinit var viewModel: PlaceListViewModel
 
@@ -20,13 +20,14 @@ class PlaceListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.place_list_fragment, container, false)
+        binding.fragment = this
+        binding.lifecycleOwner = this
+
+        return binding.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(PlaceListViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+   fun goBack(){
+       findNavController().navigateUp()
+   }
 
 }
