@@ -35,6 +35,7 @@ master branch에 pr날리는 일은 없어야 합니다. (pr시 확인)
 
 # Temi build 연결 방법
 ```
-curl -k "https://192.168.0.23.5556/grantAuth?pwd= {개발자 모드에 나오는 인증코드}"
+테미마다 다를 수 있음
+curl -k "https://192.168.0.23:5556/grantAuth?pwd= {개발자 모드에 나오는 인증코드}"
 adb connect 192.168.0.23
 ```
