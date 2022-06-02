@@ -14,11 +14,16 @@
         <entry key="..\:/Users/s2000/AndroidStudioProjects/AGO/app/src/main/res/layout/place_description_fragment.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/s2000/AndroidStudioProjects/AGO/app/src/main/res/layout/place_list_fragment.xml" value="0.11510416666666666" />
         <entry key="app/src/main/res/drawable/place_description_explain_background.xml" value="0.243" />
+        <entry key="app/src/main/res/drawable/place_list_radius.xml" value="0.2605" />
+        <entry key="app/src/main/res/drawable/tts_img_radius.xml" value="0.2605" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16728547854785478" />
         <entry key="app/src/main/res/layout/fragment_credit.xml" value="0.12503712972005207" />
         <entry key="app/src/main/res/layout/introduce_school_fragment.xml" value="0.1015625" />
         <entry key="app/src/main/res/layout/main_fragment.xml" value="0.15449669966996699" />
-        <entry key="app/src/main/res/layout/place_description_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/place_description_fragment.xml" value="0.125" />
         <entry key="app/src/main/res/layout/place_list_fragment.xml" value="0.1015625" />
+        <entry key="app/src/main/res/layout/place_list_item.xml" value="0.16728547854785478" />
+        <entry key="app/src/main/res/layout/place_list_radius.xml" value="0.16728547854785478" />
         <entry key="app/src/main/res/layout/play_list_item.xml" value="0.15449669966996699" />
       </map>
     </option>

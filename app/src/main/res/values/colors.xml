@@ -7,6 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF535353</color>
+    <color name="view_gray">#FFC6C6C6</color>
     <!--기본적인 테미 백그라운드-->
     <!--temi_backgroubd로 되어있어서 수정함    -->
     <color name="temi_background">#313131</color>
