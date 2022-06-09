@@ -6,13 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.withkwon.projecttemi.databinding.IntroduceSchoolFragmentBinding
+import com.withkwon.projecttemi.databinding.FragmentIntroduceSchoolBinding
 
 
 class IntroduceSchoolFragment : Fragment() {
 
     private lateinit var viewModel: IntroduceSchoolViewModel
-    private val binding by lazy { IntroduceSchoolFragmentBinding.inflate(layoutInflater) }
+    private val binding by lazy { FragmentIntroduceSchoolBinding.inflate(layoutInflater) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
