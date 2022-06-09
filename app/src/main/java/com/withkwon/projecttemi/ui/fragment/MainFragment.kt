@@ -37,7 +37,7 @@ class MainFragment : Fragment() {
 
     //길안내
     fun goDirectionGuidance(){
-        findNavController().navigate(R.id.action_mainFragment_to_placeListFragment)
+        findNavController().navigate(R.id.action_mainFragment_to_placeDescriptionFragment)
     }
 
     //크레딧
