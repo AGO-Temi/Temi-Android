@@ -6,13 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.withkwon.projecttemi.databinding.PlaceDescriptionFragmentBinding
+import com.withkwon.projecttemi.databinding.FragmentPlaceDescriptionBinding
 
 class PlaceDescriptionFragment : Fragment() {
 
-   private val binding by lazy { PlaceDescriptionFragmentBinding.inflate(layoutInflater) }
-
     private lateinit var viewModel: PlaceDescriptionViewModel
+    private val binding by lazy { FragmentPlaceDescriptionBinding.inflate(layoutInflater) }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,8 +24,8 @@ class PlaceDescriptionFragment : Fragment() {
         return binding.root
     }
 
-   fun goBack(){
-       findNavController().navigateUp()
-   }
+    fun goBack() {
+        findNavController().navigateUp()
+    }
 
 }
