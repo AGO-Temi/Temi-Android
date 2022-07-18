@@ -19,9 +19,10 @@
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:padding="24dp"
-            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:src="@drawable/ic_baseline_arrow_back_black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
