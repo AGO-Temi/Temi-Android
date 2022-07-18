@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.withkwon.projecttemi.ui.fragment.PlaceDescriptionFragment" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/temi_background"
+        tools:context=".ui.fragment.PlaceDescriptionFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/out_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/place_list_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="길 안내"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/back_press_image"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:onClick="@{()->fragment.goBack()}"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/explain_view"
+                android:layout_width="500dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/place_description_explain_background"
+                android:padding="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/current_location_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:maxLines="1"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="40sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/explain_view"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                tools:text=": 현위치" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="450dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:ellipsize="end"-->
+<!--                android:maxLines="3"-->
+<!--                android:textSize="30sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/explain_view"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/current_location_text"-->
+<!--                tools:text="광주소프트웨어마이스터고 로비입니다. 로비에서 맛있는 간식과 햄버거를 제공합니다. 언제나 드실 수 있습니다." />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/current_location_image_view"-->
+<!--                android:layout_width="500dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginEnd="30dp"-->
+<!--                android:background="@drawable/place_description_explain_background"-->
+<!--                android:contentDescription="@string/current_location_image_view"-->
+<!--                android:src="@drawable/example_image"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/explain_view" />-->
+
+<!--            &lt;!&ndash;      이제 이미지뷰 넣으면 됨      &ndash;&gt;-->
+<!--            <androidx.appcompat.widget.AppCompatImageView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_marginEnd="40dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:background="@drawable/tts_img_radius"-->
+<!--                android:src="@drawable/tts_mike"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/in_constraint_layout"-->
+<!--                app:layout_constraintEnd_toEndOf="parent" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/in_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/out_constraint_layout"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/view_gray"
+                    app:layout_constraintBottom_toTopOf="@+id/place_recycler_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/place_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:listitem="@layout/place_list_item" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>
